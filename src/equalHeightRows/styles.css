@@ -1,0 +1,22 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+
+.container .box{
+    width: 600px;
+    margin: 140px auto  ;
+    background-color: white;
+    display: flex;
+}
+
+.container .box .box-row{
+    display: table-row;
+}
+
+.container .box .box-row .box-cell{
+display: table-cell;
+width: 50%;
+padding: 20px;
+}
