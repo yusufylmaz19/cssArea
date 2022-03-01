@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.imageBox{
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px  rgba(0, 0, 0,.4);
+    overflow: hidden;
+}
+
+.imageBox > video{
+    width: 100%;
+    transition: .5s;
+} 
+
+.imageBox > .textBox{
+    position: absolute;
+    bottom:-100%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #8b95c5  ;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+    transition:  .5s;
+}
+
+
+.imageBox >.textBox p{
+    margin: 0;
+    padding: 0;
+    color:  #000;
+}
+
+.imageBox:hover .textBox{
+    bottom: -75%;
+}
+
+.imageBox:hover video{
+    transform: translateY(-15%);
+}
