@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: yellow;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black ;
+    transform: translate(-50% ,-50%);
+    cursor: pointer;
+    outline:none;
+    border-radius: 5px;
+    transition: .5s;
+} 
+
+
+.line{
+    position: relative;
+    width: 150px;
+    background-color: black;
+    height: 10px;
+    display: inline-block ;
+    margin: 10px 15px;
+    transition:  .5s;
+    transform-origin: center;
+}
+
+button:hover{
+    border-radius: 50%;
+}
+
+button:hover .line:nth-child(1){
+   transform: rotate(-50deg) translateX(-20px) translateY(25px);
+}
+button:hover .line:nth-child(3){
+   transform: rotate(50deg) translateX(-20px) translateY(-25px);
+}
+
+button:hover .line:nth-child(2){
+ opacity: 0;
+}
+ 

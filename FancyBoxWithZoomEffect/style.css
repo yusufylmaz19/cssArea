@@ -1,0 +1,71 @@
+body {
+  background-color: darkorchid;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 350px;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.icon h1 {
+  margin: 0;
+  padding: 0;
+  transition: .045s ease;
+}
+
+.container p {
+  position: relative;
+  top: 55px;
+  opacity: 0;
+  transition: 0.5s ease 0.4s;
+  font-size: 1.4rem;
+  color: rebeccapurple;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: rgb(216, 132, 236);
+  line-height: 44px;
+  border-radius: 50%;
+  color: rebeccapurple;
+  transition: 0.9s ease-in-out;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container:hover .icon {
+  height: 900px;
+  width: 900px;
+  line-height: 800px; 
+  background-color: rgb(91, 228, 228);
+  transform: translate(-50%, -40%);
+}
+.container:hover h1{
+    transform: scale(2);
+}
+
+.container:hover p {
+  opacity: 1;
+}
+
+.container:hover {
+  box-shadow: -30px 0 0 #262626, 
+               30px 0 0 #262626, 
+               0px 30px 0 #262626,
+               0px -30px 0 #262626;
+}
